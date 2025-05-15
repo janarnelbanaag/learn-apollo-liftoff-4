@@ -8,8 +8,8 @@ import { gql } from "../__generated__";
 import { useMutation } from "@apollo/client";
 
 const INCREMENT_TRACK_VIEWS = gql(`
-  mutation IncrementTrackView($incrementTrackViewId: String!) {
-    incrementTrackView(id: $incrementTrackViewsId) {
+  mutation IncrementTrackViews($incrementTrackViewId: ID!) {
+    incrementTrackView(id: $incrementTrackViewId) {
       code
       success
       message
