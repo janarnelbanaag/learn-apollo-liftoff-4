@@ -33,7 +33,7 @@ const TrackCard: React.FC<{ track: Omit<Track, "modules"> }> = ({ track }) => {
 	});
 
 	return (
-		<CardContainer to={`/track/${id}`}>
+		<CardContainer to={`/track/${id}`} onClick={() => incrementViews()}>
 			<CardContent>
 				<CardImageContainer>
 					<CardImage src={thumbnail || ""} alt={title} />
